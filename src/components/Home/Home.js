@@ -9,7 +9,7 @@ export const Home = () => {
                     <a className='transform transition duration-150 hover:scale-110 hover:rotate-6' href='https://github.com/tprei'>
                         <img className='w-8' src='./github-icon.svg' alt='github icon'></img>
                     </a>
-                    <a className='transform transition duration-150 hover:scale-110 hover:rotate-6' href='https://github.com/tprei'>
+                    <a className='transform transition duration-150 hover:scale-110 hover:rotate-6' href='https://linkedin.com/in/thiagopreischadt'>
                         <img className='w-8' src='./linkedin-icon.svg' alt='linkedin icon'></img>
                     </a>
                 </div>
