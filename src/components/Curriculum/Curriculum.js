@@ -15,7 +15,7 @@ const experiences = [
         "title": "Upwork",
         "image": "./upwork.svg",
         "subtitle": "Freelance Software Developer",
-        "timePeriod": "(2029 - Present)",
+        "timePeriod": "(2019 - Present)",
         "description": "Worked with different clients in 8 different projects related to Software development and Webscraping.",
         "color": "text-defaultGreen-500"
     },
