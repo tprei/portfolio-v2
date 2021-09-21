@@ -1,12 +1,12 @@
-import { useState } from 'react';
+import { forwardRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 
 const DEFAULT_NAME_VALUE = 'Write your name';
 const DEFAULT_EMAIL_VALUE = 'Write your email';
 const DEFAULT_DESC_VALUE = 'Write your description';
 
-export const Footer = (props) => {
-    const {id} = props;
+export const Footer = forwardRef((props, ref) => {
+    const {footerRef} = ref.current;
 
     const [nameValue, setNameValue] = useState(DEFAULT_NAME_VALUE);
     const [emailValue, setEmailValue] = useState(DEFAULT_EMAIL_VALUE);
@@ -48,7 +48,7 @@ export const Footer = (props) => {
     }
 
     return (
-        <div id={id} className='w-full flex gap-10 flex-col pt-10 md:flex-row bg-red'>
+        <div ref={footerRef} className='w-full flex gap-10 flex-col pt-10 md:flex-row bg-red'>
             <img className='mx-auto mt-36 md:h-72 transform -rotate-12' src='./letter.svg' alt='letter'></img>
             <div className='mx-auto flex flex-col'>
                 <h1 className='section'>Contact me</h1>
@@ -82,4 +82,4 @@ export const Footer = (props) => {
             </div>
         </div>
     );
-}
+});

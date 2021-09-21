@@ -1,5 +1,5 @@
+import React from 'react';
 import {Skills} from '../Skills/Skills'
-
 
 const skills = [
     {
@@ -20,10 +20,10 @@ const skills = [
 ];
 
 
-export const About = (props) => {
-    const {id} = props;
+export const About = React.forwardRef((props, ref) => {
+    const {aboutRef} = ref.current;
     return (
-        <div id={id} className='flex text-green text-center flex-col gap-10 m-auto w-4/5'>
+        <div ref={aboutRef} className='flex text-green text-center flex-col gap-10 m-auto w-4/5'>
             <div className='text-green text-justify font-serif'>
                 <h1 className='section'>About me</h1>
                 <div className='flex flex-col gap-5 md:mt-10'>
@@ -36,4 +36,4 @@ export const About = (props) => {
             <p>and others!</p>
         </div>
     );
-};
+});

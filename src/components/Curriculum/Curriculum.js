@@ -1,5 +1,7 @@
 import { Experience } from "../Experience/Experience";
 
+import React from 'react';
+
 const experiences = [
     {
         "id": "1",
@@ -21,10 +23,10 @@ const experiences = [
     },
 ]
 
-export const Curriculum = (props) => {
-    const {id} = props;
+export const Curriculum = React.forwardRef((props, ref) => {
+    const {curRef} = ref.current;
     return (
-        <div id={id} className='flex flex-col md:gap-12 my-36 m-auto w-4/5'>
+        <div ref={curRef} className='flex flex-col md:gap-12 my-36 m-auto w-4/5'>
             <h1 className='section'>Past experiences</h1>
             {experiences.map(exp => {
                 return (<Experience 
@@ -40,4 +42,4 @@ export const Curriculum = (props) => {
             })}
         </div>
     );
-}
+});
