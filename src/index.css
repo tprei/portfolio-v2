@@ -13,3 +13,7 @@ body {
 
   background-color: #FFF8E5;
 }
+
+.section {
+  @apply text-orange font-sans font-bold text-5xl my-8 md:text-6xl;
+}

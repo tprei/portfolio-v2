@@ -9,7 +9,11 @@ module.exports = {
             orange: '#FFB344',
             yellow: '#FFF8E5',
             green: '#00A19D',
-            black: colors.black
+
+            defaultBlack: colors.black,
+            defaultRed: colors.red,
+            defaultGreen: colors.green,
+            defaultGray: colors.gray
         },
         fontFamily: {
             sans: ['Open Sans', 'sans-serif'],

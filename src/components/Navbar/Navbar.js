@@ -1,4 +1,7 @@
 export const Navbar = () => {
+    const aboutElem = document.getElementById('about')
+    const pastExperienceElem = document.getElementById('past-experience')
+    const footerElem = document.getElementById('footer')
     return (
         <nav className='flex flex-col md:flex-row w-full align-start md:justify-between font-serif'>
             <div className='flex justify-center ml-5 mt-5 md:flex-row'>
@@ -9,10 +12,10 @@ export const Navbar = () => {
                 </div>
             </div>
             <div className='flex flex-row justify-center mt-3 md:mr-10 md:mt-10 gap-3 md:gap-10 font-sans text-red'>
-                <b className='cursor-pointer'>About me</b>
-                <b className='cursor-pointer'>Past experience</b>
-                <b className='cursor-pointer'>Contact</b>
-                <a className='transform transition duration-75 hover:scale-105' href='https://github.com/tprei/portfolio-v2'>
+                <b onClick={() => {aboutElem.scrollIntoView({behavior: 'smooth'})}} className='cursor-pointer transform transition duration-200 hover:scale-110'>About me</b>
+                <b onClick={() => {pastExperienceElem.scrollIntoView({behavior: 'smooth'})}} className='cursor-pointer transform transition duration-200 hover:scale-110'>Past experience</b>
+                <b onClick={() => {footerElem.scrollIntoView({behavior: 'smooth'})}} className='cursor-pointer transform transition duration-200 hover:scale-110'>Contact</b>
+                <a className='transform transition duration-75 hover:scale-110' href='https://github.com/tprei/portfolio-v2'>
                     <img src='github-icon.svg' alt='gitub icon'/>
                 </a>
             </div>
