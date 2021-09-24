@@ -5,12 +5,25 @@ const skills = [
     {
         'id': '1',
         'label': 'Frontend',
-        'values': ['React', 'TailwindCSS', 'Material UI']
+        'values': [
+            'HTML',
+            'CSS',
+            'Javascript',
+            'React.js', 
+            'TailwindCSS', 
+            'Material UI'
+        ]
     },
     {
         'id': '2',
         'label': 'Backend',
-        'values': ['Go (Gin & Echo)', 'Node.js (Express)', 'Python (Flask)']
+        'values': [
+            'Go (Gin & Echo)', 
+            'Node.js (Express)', 
+            'Python (Flask)',
+            'REST',
+            'Microservices'
+        ]
     },
     {
         'id': '3',
