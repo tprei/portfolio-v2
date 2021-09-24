@@ -26,7 +26,7 @@ export const Skills = (props) => {
     
     return (
         <div className='flex flex-col md:flex-row gap-4 justify-center'>
-            <div className='flex flex-row md:flex-col gap-4'>
+            <div className='flex justify-center flex-row md:flex-col gap-4'>
                 {objects.map(obj => {
                     return (
                         <Tab key={obj.id} label={obj.label} selected={selected} onClick={()=>{setSelected(obj.label)}}/>
