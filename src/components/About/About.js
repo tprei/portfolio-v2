@@ -14,8 +14,19 @@ const skills = [
     },
     {
         'id': '3',
-        'label': 'Infrastructure',
-        'values': ['AWS', 'GCP', 'Kubernetes', 'Docker', 'Terraform']
+        'label': 'Cloud',
+        'values': [
+            'SNS/SQS',
+            'Lambda',
+            'App Engine',
+            'Cloud Run',
+            'Firestore',
+            'PostgreSQL',
+            'ScyllaDB',
+            'Kubernetes', 
+            'Docker', 
+            'Terraform'
+        ]
     },
 ];
 
